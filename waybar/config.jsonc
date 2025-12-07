@@ -1,0 +1,51 @@
+{
+  "layer": "bottom",
+  "margin": "10 10 0 10",
+  "rounded": 4,
+  "spacing": 20,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "custom/sgrodolix",
+    "pulseaudio",
+    "tray",
+    "clock",
+    "custom/power",
+  ],
+
+  "clock": {
+    "format": "{:%a %d/%m %H:%M}",
+    "tooltip": false,
+  },
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": "",
+    },
+    "sort-by-number": true,
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": " {volume}%",
+    "format-icons": ["", "", ""],
+    "reverse-scrolling": true,
+  },
+  "tray": { "icon-size": 20, "spacing": 10 },
+  "custom/power": {
+    "format": "  ",
+    "on-click": "shutdown -P now",
+    "tooltip": false,
+  },
+  "custom/sgrodolix": {
+    "exec": "~/.config/waybar/sgrodolix.sh",
+    "interval": 60,
+    "format": "{}",
+    "tooltip-format": "sgrodolix.website {}",
+  },
+
+  "custom/space": { "format": " " },
+}

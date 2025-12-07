@@ -1,0 +1,23 @@
+[general]
+import = ["theme.toml"]
+
+[window]
+decorations="None"
+opacity=0.85
+blur=false
+padding = { x = 10, y = 5 }
+
+[font]
+normal = { family = "CaskaydiaCove NF", style = "Regular" }
+bold = { style = "Bold" }
+italic = { style = "Italic" }
+size = 14
+
+[cursor]
+style = { shape = "Beam", blinking="On" }
+
+[terminal]
+shell = "zsh"
+
+[mouse]
+hide_when_typing = true

@@ -1,0 +1,50 @@
+* {
+    border:        none;
+    font-family:   "CaskaydiaCove Nerd Font";
+    font-size:     16px;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0s;
+    color: #FEFEFE;
+}
+
+window {
+    color:      rgba(217, 216, 216, 1);
+    background: rgba(15, 15, 15, 0.8);
+    border-radius: 6px;
+}
+
+#workspaces button {
+    padding: 0.3rem 0.5rem;
+}
+#workspaces button:first-child {
+    padding-left: 1rem;
+}
+
+#workspaces button:hover {
+    background: none;
+}
+
+#workspaces button:hover * {
+    color: #fff;
+    font-weight: bold;
+}
+
+#workspaces button.active * {
+    color: white;
+    font-weight: bold;
+}
+
+#workspaces button.urgent * {
+    color: #A15454;
+    font-weight: bold;
+}
+
+#workspaces button * {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#tray menu {
+    background: #262826;
+}
+
